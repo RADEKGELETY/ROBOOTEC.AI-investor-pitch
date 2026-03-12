@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROBOOTEC.AI — Slide 10</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="slide-page">
+
+<div class="slide-container">
+
+<div class="slide-header">
+<a href="../index.html" class="back-link">← zpět na úvod</a>
+<div class="slide-counter">Slide 10 / 13</div>
+</div>
+
+<h1 class="slide-title-main">
+První výsledky prototypu – Backtest
+</h1>
+
+<img src="slide10.jpg" class="slide-image" alt="Slide 10">
+
+<div class="slide-description">
+
+<p>
+Zde vidíte první výsledky prototypu systému ROBOOTEC.
+</p>
+
+<p>
+Systém byl testován na trhu NASDAQ na demo účtu s kapitálem 100 tisíc dolarů.
+</p>
+
+<p>
+Během testovacího období dosáhl zhodnocení přes 20 procent.
+</p>
+
+<p>
+Winrate byla přibližně 51 procent, což je u tradingu běžná hodnota.
+</p>
+
+<p>
+Díky správnému řízení risku však systém generoval dlouhodobě pozitivní výsledek.
+</p>
+
+<p>
+Tyto výsledky slouží jako první ověření funkčnosti konceptu.
+</p>
+
+</div>
+
+<div class="slide-buttons">
+
+<a href="slide9.html" class="btn btn-secondary">
+← Předchozí slide
+</a>
+
+<button onclick="playVoice()" class="btn btn-secondary">
+Přehrát hlas
+</button>
+
+<button onclick="stopVoice()" class="btn btn-secondary">
+Vypnout hlas
+</button>
+
+<a href="slide11.html" class="btn btn-primary">
+Další slide →
+</a>
+
+</div>
+
+</div>
+
+<script src="../voice.js"></script>
+
+<script>
+const text = document.querySelector(".slide-description").innerText;
+
+function playVoice(){
+speakText(text);
+}
+</script>
+
+</body>
+</html>
