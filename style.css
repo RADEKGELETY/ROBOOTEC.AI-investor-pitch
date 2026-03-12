@@ -672,10 +672,13 @@ text-decoration:none;
   min-height:100vh;
   font-family:"Inter", Arial, Helvetica, sans-serif;
   background:
-    radial-gradient(circle at top left, rgba(79,124,255,0.16), transparent 28%),
-    radial-gradient(circle at top right, rgba(0,229,255,0.12), transparent 24%),
+    radial-gradient(circle at 15% 20%, rgba(79,124,255,0.18), transparent 24%),
+    radial-gradient(circle at 85% 18%, rgba(0,229,255,0.14), transparent 22%),
     linear-gradient(180deg, #0a0f1a 0%, #101827 100%);
   color:white;
+  overflow:hidden;
+  position:relative;
+}
 }
 
 .landing-wrapper{
