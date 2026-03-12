@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROBOOTEC.AI — Slide 13</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="slide-page">
+
+<div class="slide-container">
+
+<div class="slide-header">
+<a href="../index.html" class="back-link">← zpět na úvod</a>
+<div class="slide-counter">Slide 13 / 13</div>
+</div>
+
+<h1 class="slide-title-main">
+Budoucnost správy kapitálu s AI
+</h1>
+
+<img src="slide13.jpg" class="slide-image" alt="Slide 13">
+
+<div class="slide-description">
+
+<p>
+Naším cílem je vytvořit inteligentní AI systém pro správu kapitálu, který bude schopný autonomně analyzovat trh a řídit investice.
+</p>
+
+<p>
+Věříme, že kombinace umělé inteligence, dat a tradingu může zásadně změnit způsob, jakým se kapitál spravuje.
+</p>
+
+<p>
+Projekt ROBOOTEC budujeme jako technologickou platformu, která může v budoucnu sloužit investorům, finančním institucím i asset managerům.
+</p>
+
+<p>
+Hledáme investory, kteří chtějí být u vzniku této technologie od samého začátku.
+</p>
+
+<p>
+Děkuji za pozornost.
+</p>
+
+</div>
+
+<div class="slide-buttons">
+
+<a href="slide12.html" class="btn btn-secondary">
+← Předchozí slide
+</a>
+
+<button onclick="playVoice()" class="btn btn-secondary">
+Přehrát hlas
+</button>
+
+<button onclick="stopVoice()" class="btn btn-secondary">
+Vypnout hlas
+</button>
+
+<a href="mailto:info@robootec.ai" class="btn btn-primary">
+Mám zájem o investici
+</a>
+
+</div>
+
+</div>
+
+<script src="../voice.js"></script>
+
+<script>
+const text = document.querySelector(".slide-description").innerText;
+
+function playVoice(){
+speakText(text);
+}
+</script>
+
+</body>
+</html>
