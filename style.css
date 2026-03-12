@@ -699,8 +699,10 @@ text-decoration:none;
 }
 
 .landing-logo-wrap{
-  margin-bottom:24px;
+margin-bottom:18px;
+opacity:0.95;
 }
+
 .landing-logo{
   width:auto;
   height:70px;
