@@ -701,13 +701,13 @@ text-decoration:none;
 .landing-logo-wrap{
   margin-bottom:24px;
 }
-
 .landing-logo{
-  max-width:140px;
-  width:100%;
-  height:auto;
+  width:auto;
+  height:70px;
+  max-width:100%;
+  object-fit:contain;
   display:block;
-  margin:0 auto;
+  margin:0 auto 10px auto;
 }
 
 .landing-badge{
