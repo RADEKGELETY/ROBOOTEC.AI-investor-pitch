@@ -1,60 +1,96 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ROBOOTEC.AI — Slide 1</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ROBOOTEC.AI — Slide 1</title>
+
+<link rel="stylesheet" href="../style.css">
+
 </head>
+
 <body class="slide-page">
-  <main class="slide-wrap">
-    <div class="slide-topbar">
-      <a class="back-link" href="../index.html">← Zpět na úvod</a>
-      <div>Slide 1 / 13</div>
-    </div>
 
-    <section class="slide-shell">
-      <div class="slide-image-box">
-        <img src="../slides/slide1.jpg" alt="ROBOOTEC.AI Slide 1" class="slide-image" />
-      </div>
+<div class="slide-container">
 
-      <div class="slide-content">
-        <div class="slide-label">Slide 1 — Title</div>
-        <h1 class="slide-title">Prediktivní AI Trading Platforma</h1>
+<div class="slide-header">
 
-        <p class="slide-text" id="slideText">Dobrý den, jmenuji se Radek Gelety a jsem zakladatel projektu ROBOOTEC.AI.
+<a href="../index.html" class="back-link">
+← zpět na úvod
+</a>
 
+<div class="slide-counter">
+Slide 1 / 13
+</div>
+
+</div>
+
+
+<h1 class="slide-title">
+
+ROBOOTEC.AI  
+Prediktivní AI Trading Platforma
+
+</h1>
+
+
+<img src="slide1.jpg" class="slide-image">
+
+
+
+<div class="slide-description">
+
+<p>
+Dobrý den, jmenuji se Radek Gelety a jsem zakladatel projektu ROBOOTEC.AI.
+</p>
+
+<p>
 Budujeme prediktivní AI trading platformu, která využívá velká data a umělou inteligenci k automatickému řízení investic na finančních trzích.
+</p>
 
-Naším cílem je vytvořit autonomní systém, který dokáže analyzovat obrovské množství dat, předpovídat vývoj trhu a samostatně řídit investiční strategie s vyšší efektivitou než člověk.</p>
+<p>
+Naším cílem je vytvořit autonomní systém, který dokáže analyzovat obrovské množství dat, předpovídat vývoj trhu a samostatně řídit investiční strategie s vyšší efektivitou než člověk.
+</p>
 
-        <div class="controls">
-          <button class="btn btn-secondary" onclick="playVoice()">Přehrát hlas</button>
-          <button class="btn btn-secondary" onclick="stopVoice()">Vypnout hlas</button>
-          <a class="btn btn-primary" href="slide2.html">Další slide</a>
-        </div>
+</div>
 
-        <div class="audio-note">
-          Zatím se používá hlas prohlížeče. Později sem nahradíme audio tvým skutečným hlasem.
-        </div>
-      </div>
-    </section>
-  </main>
 
-  <script src="../voice.js"></script>
-  <script>
-    const text = document.getElementById("slideText").innerText;
 
-    function playVoice() {
-      speakText(text);
-    }
+<div class="slide-buttons">
 
-    window.onload = function () {
-      setTimeout(() => speakText(text), 500);
-    };
-  </script>
+<button onclick="playVoice()" class="btn btn-secondary">
+Přehrát hlas
+</button>
+
+<button onclick="stopVoice()" class="btn btn-secondary">
+Vypnout hlas
+</button>
+
+<a href="slide2.html" class="btn btn-primary">
+Další slide →
+</a>
+
+</div>
+
+
+</div>
+
+
+
+<script src="../voice.js"></script>
+
+<script>
+
+const text = document.querySelector(".slide-description").innerText;
+
+function playVoice(){
+speakText(text);
+}
+
+</script>
+
+
 </body>
 </html>
