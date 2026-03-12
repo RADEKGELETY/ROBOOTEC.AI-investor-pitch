@@ -667,3 +667,118 @@ text-decoration:none;
 .btn-secondary:hover{
   opacity:0.9;
 }
+.landing-page{
+  margin:0;
+  min-height:100vh;
+  font-family:"Inter", Arial, Helvetica, sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(79,124,255,0.16), transparent 28%),
+    radial-gradient(circle at top right, rgba(0,229,255,0.12), transparent 24%),
+    linear-gradient(180deg, #0a0f1a 0%, #101827 100%);
+  color:white;
+}
+
+.landing-wrapper{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:40px 20px;
+}
+
+.landing-card{
+  width:100%;
+  max-width:960px;
+  text-align:center;
+  background:rgba(15,23,42,0.72);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:20px;
+  padding:48px 36px;
+  box-shadow:0 20px 60px rgba(0,0,0,0.35);
+  backdrop-filter:blur(12px);
+}
+
+.landing-logo-wrap{
+  margin-bottom:24px;
+}
+
+.landing-logo{
+  max-width:140px;
+  width:100%;
+  height:auto;
+  display:block;
+  margin:0 auto;
+}
+
+.landing-badge{
+  display:inline-block;
+  padding:10px 16px;
+  border-radius:999px;
+  background:rgba(79,124,255,0.14);
+  border:1px solid rgba(79,124,255,0.25);
+  color:#dbe8ff;
+  font-size:14px;
+  margin-bottom:24px;
+}
+
+.landing-title-main{
+  margin:0;
+  font-size:54px;
+  line-height:1.02;
+  letter-spacing:-0.03em;
+  max-width:800px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.landing-subtitle-main{
+  margin:24px auto 0;
+  max-width:760px;
+  font-size:20px;
+  line-height:1.8;
+  color:#cbd5e1;
+}
+
+.landing-founder-box{
+  margin:32px auto 0;
+  max-width:760px;
+  background:rgba(255,255,255,0.03);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:16px;
+  padding:24px;
+}
+
+.landing-founder-text{
+  margin:0;
+  font-size:18px;
+  line-height:1.85;
+  color:#e5edf9;
+}
+
+.landing-buttons{
+  margin-top:34px;
+  display:flex;
+  justify-content:center;
+  gap:16px;
+  flex-wrap:wrap;
+}
+
+@media (max-width: 768px){
+  .landing-card{
+    padding:32px 20px;
+  }
+
+  .landing-title-main{
+    font-size:38px;
+  }
+
+  .landing-subtitle-main{
+    font-size:18px;
+    line-height:1.7;
+  }
+
+  .landing-founder-text{
+    font-size:17px;
+    line-height:1.8;
+  }
+}
