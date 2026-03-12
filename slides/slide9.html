@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROBOOTEC.AI — Slide 9</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="slide-page">
+
+<div class="slide-container">
+
+<div class="slide-header">
+<a href="../index.html" class="back-link">← zpět na úvod</a>
+<div class="slide-counter">Slide 9 / 13</div>
+</div>
+
+<h1 class="slide-title-main">
+Roadmapa projektu a plán růstu
+</h1>
+
+<img src="slide9.jpg" class="slide-image" alt="Slide 9">
+
+<div class="slide-description">
+
+<p>
+Na této roadmapě vidíte plán rozvoje projektu ROBOOTEC.
+</p>
+
+<p>
+První fáze Proof of Concept je dokončena letos a ověřuje funkčnost základního systému.
+</p>
+
+<p>
+Následuje vývoj MVP a spuštění reálného tradingu.
+</p>
+
+<p>
+Ve třetí fázi budujeme AI asset manager a začínáme komerční využití technologie.
+</p>
+
+<p>
+V horizontu několika let plánujeme globální expanzi, prodej licencí a vytvoření investičního fondu.
+</p>
+
+</div>
+
+<div class="slide-buttons">
+
+<a href="slide8.html" class="btn btn-secondary">
+← Předchozí slide
+</a>
+
+<button onclick="playVoice()" class="btn btn-secondary">
+Přehrát hlas
+</button>
+
+<button onclick="stopVoice()" class="btn btn-secondary">
+Vypnout hlas
+</button>
+
+<a href="slide10.html" class="btn btn-primary">
+Další slide →
+</a>
+
+</div>
+
+</div>
+
+<script src="../voice.js"></script>
+
+<script>
+const text = document.querySelector(".slide-description").innerText;
+
+function playVoice(){
+speakText(text);
+}
+</script>
+
+</body>
+</html>
