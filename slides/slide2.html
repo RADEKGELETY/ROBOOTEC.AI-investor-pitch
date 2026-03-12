@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ROBOOTEC.AI — Slide 2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body class="slide-page">
+  <main class="slide-wrap">
+    <div class="slide-topbar">
+      <a class="back-link" href="../index.html">← Zpět na úvod</a>
+      <div>Slide 2 / 13</div>
+    </div>
+
+    <section class="slide-shell">
+      <div class="slide-image-box">
+        <img src="../images/slide2.jpg" alt="ROBOOTEC.AI Slide 2" class="slide-image" />
+      </div>
+
+      <div class="slide-content">
+        <div class="slide-label">Slide 2 — Technologická revoluce</div>
+        <h1 class="slide-title">Technologické revoluce vznikají propojením</h1>
+
+        <p class="slide-text" id="slideText">Technologické revoluce často vznikají spojením několika existujících technologií.
+
+Telefon, hudební přehrávač a internet existovaly dávno před iPhonem. Ale až jejich propojení vytvořilo úplně nový produkt.
+
+Stejný princip dnes vzniká ve financích.
+
+Spojením big data, umělé inteligence a algoritmického tradingu vzniká nová generace investičních systémů.
+
+A právě tímto směrem jde projekt ROBOOTEC.</p>
+
+        <div class="controls">
+          <button class="btn btn-secondary" onclick="playVoice()">Přehrát hlas</button>
+          <button class="btn btn-secondary" onclick="stopVoice()">Vypnout hlas</button>
+          <a class="btn btn-primary" href="slide3.html">Další slide</a>
+        </div>
+
+        <div class="audio-note">
+          Tady už investor jasně chápe rámec: nejde o dalšího bota, ale o novou technologickou vrstvu ve financích.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../voice.js"></script>
+  <script>
+    const text = document.getElementById("slideText").innerText;
+
+    function playVoice() {
+      speakText(text);
+    }
+
+    window.onload = function () {
+      setTimeout(() => speakText(text), 500);
+    };
+  </script>
+</body>
+</html>
