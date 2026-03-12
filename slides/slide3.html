@@ -1,66 +1,87 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ROBOOTEC.AI — Slide 3</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROBOOTEC.AI — Slide 3</title>
+<link rel="stylesheet" href="../style.css">
 </head>
+
 <body class="slide-page">
-  <main class="slide-wrap">
-    <div class="slide-topbar">
-      <a class="back-link" href="../index.html">← Zpět na úvod</a>
-      <div>Slide 3 / 13</div>
-    </div>
 
-    <section class="slide-shell">
-      <div class="slide-image-box">
-        <img src="../slides/slide3.jpg" alt="ROBOOTEC.AI Slide 3" class="slide-image" />
-      </div>
+<div class="slide-container">
 
-      <div class="slide-content">
-        <div class="slide-label">Slide 3 — Problém na trhu</div>
-        <h1 class="slide-title">Chaos v datech, emoce a slepota ke kontextu</h1>
+<div class="slide-header">
+<a href="../index.html" class="back-link">← zpět na úvod</a>
+<div class="slide-counter">Slide 3 / 13</div>
+</div>
 
-        <p class="slide-text" id="slideText">Finanční trhy dnes generují obrovské množství dat.
+<h1 class="slide-title-main">
+Problém na trhu: chaos v datech, emoce a slepota ke kontextu
+</h1>
 
+<img src="slide3.jpg" class="slide-image" alt="Slide 3">
+
+<div class="slide-description">
+
+<p>
+Finanční trhy dnes generují obrovské množství dat.
+</p>
+
+<p>
 Makroekonomické zprávy, geopolitika, sociální sítě, fundamentální data i technická data.
+</p>
 
+<p>
 Pro člověka je prakticky nemožné všechna tato data rychle zpracovat a správně interpretovat.
+</p>
 
+<p>
 Navíc zde působí lidský faktor — stres, emoce a kognitivní zkreslení.
+</p>
 
+<p>
 Současné obchodní systémy jsou často technologicky zastaralé a nedokážou pracovat s kontextem.
+</p>
 
-Výsledkem je nízké zhodnocení kapitálu a časté investiční chyby.</p>
+<p>
+Výsledkem je nízké zhodnocení kapitálu a časté investiční chyby.
+</p>
 
-        <div class="controls">
-          <button class="btn btn-secondary" onclick="playVoice()">Přehrát hlas</button>
-          <button class="btn btn-secondary" onclick="stopVoice()">Vypnout hlas</button>
-          <a class="btn btn-primary" href="slide4.html">Další slide</a>
-        </div>
+</div>
 
-        <div class="audio-note">
-          Tento slide vysvětluje, proč je na trhu prostor pro nový AI-native přístup ke správě kapitálu.
-        </div>
-      </div>
-    </section>
-  </main>
+<div class="slide-buttons">
 
-  <script src="../voice.js"></script>
-  <script>
-    const text = document.getElementById("slideText").innerText;
+<a href="slide2.html" class="btn btn-secondary">
+← Předchozí slide
+</a>
 
-    function playVoice() {
-      speakText(text);
-    }
+<button onclick="playVoice()" class="btn btn-secondary">
+Přehrát hlas
+</button>
 
-    window.onload = function () {
-      setTimeout(() => speakText(text), 500);
-    };
-  </script>
+<button onclick="stopVoice()" class="btn btn-secondary">
+Vypnout hlas
+</button>
+
+<a href="slide4.html" class="btn btn-primary">
+Další slide →
+</a>
+
+</div>
+
+</div>
+
+<script src="../voice.js"></script>
+
+<script>
+const text = document.querySelector(".slide-description").innerText;
+
+function playVoice(){
+speakText(text);
+}
+</script>
+
 </body>
 </html>
