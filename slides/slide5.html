@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROBOOTEC.AI — Slide 5</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="slide-page">
+
+<div class="slide-container">
+
+<div class="slide-header">
+<a href="../index.html" class="back-link">← zpět na úvod</a>
+<div class="slide-counter">Slide 5 / 13</div>
+</div>
+
+<h1 class="slide-title-main">
+Jak systém ROBOOTEC funguje
+</h1>
+
+<img src="slide5.jpg" class="slide-image" alt="Slide 5">
+
+<div class="slide-description">
+
+<p>
+ROBOOTEC není jeden trading bot.
+</p>
+
+<p>
+Je to komplexní AI platforma, která propojuje prediktivní signály s různými obchodními strategiemi a finančními instrumenty.
+</p>
+
+<p>
+Systém analyzuje tržní data a vyhodnotí obchod s nejvyšší pravděpodobností úspěchu.
+</p>
+
+<p>
+Následně nastaví parametry obchodu – velikost pozice, stop loss, risk management – a obchod automaticky otevře.
+</p>
+
+<p>
+Systém zároveň průběžně monitoruje vývoj trhu a aktivně řídí průběh obchodu.
+</p>
+
+<p>
+Cílem je dosáhnout kvalitnějších predikcí a dlouhodobě vyššího zhodnocení kapitálu.
+</p>
+
+</div>
+
+<div class="slide-buttons">
+
+<a href="slide4.html" class="btn btn-secondary">
+← Předchozí slide
+</a>
+
+<button onclick="playVoice()" class="btn btn-secondary">
+Přehrát hlas
+</button>
+
+<button onclick="stopVoice()" class="btn btn-secondary">
+Vypnout hlas
+</button>
+
+<a href="slide6.html" class="btn btn-primary">
+Další slide →
+</a>
+
+</div>
+
+</div>
+
+<script src="../voice.js"></script>
+
+<script>
+const text = document.querySelector(".slide-description").innerText;
+
+function playVoice(){
+speakText(text);
+}
+</script>
+
+</body>
+</html>
