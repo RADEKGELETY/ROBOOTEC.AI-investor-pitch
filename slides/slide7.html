@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROBOOTEC.AI — Slide 7</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="slide-page">
+
+<div class="slide-container">
+
+<div class="slide-header">
+<a href="../index.html" class="back-link">← zpět na úvod</a>
+<div class="slide-counter">Slide 7 / 13</div>
+</div>
+
+<h1 class="slide-title-main">
+Konkurence a přístupy k AI tradingu
+</h1>
+
+<img src="slide7.jpg" class="slide-image" alt="Slide 7">
+
+<div class="slide-description">
+
+<p>
+Na trhu existují různé přístupy k využití umělé inteligence v tradingu.
+</p>
+
+<p>
+Quant týmy a hedge fondy mají velmi silné technologie, ale jsou uzavřené a nepřístupné běžným investorům.
+</p>
+
+<p>
+Platformy jako Numerai využívají AI modely, ale nejde o plnohodnotné investiční produkty.
+</p>
+
+<p>
+Mnoho trading botů používá pouze jednu strategii a jejich výkonnost se často rychle vyčerpá.
+</p>
+
+<p>
+ROBOOTEC jde jinou cestou.
+</p>
+
+<p>
+Budujeme škálovatelnou AI platformu, která kombinuje více strategií, AI analýzu trhu a autonomní řízení portfolia.
+</p>
+
+</div>
+
+<div class="slide-buttons">
+
+<a href="slide6.html" class="btn btn-secondary">
+← Předchozí slide
+</a>
+
+<button onclick="playVoice()" class="btn btn-secondary">
+Přehrát hlas
+</button>
+
+<button onclick="stopVoice()" class="btn btn-secondary">
+Vypnout hlas
+</button>
+
+<a href="slide8.html" class="btn btn-primary">
+Další slide →
+</a>
+
+</div>
+
+</div>
+
+<script src="../voice.js"></script>
+
+<script>
+const text = document.querySelector(".slide-description").innerText;
+
+function playVoice(){
+speakText(text);
+}
+</script>
+
+</body>
+</html>
