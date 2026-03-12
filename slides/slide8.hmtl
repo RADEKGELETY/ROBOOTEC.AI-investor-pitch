@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROBOOTEC.AI — Slide 8</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="slide-page">
+
+<div class="slide-container">
+
+<div class="slide-header">
+<a href="../index.html" class="back-link">← zpět na úvod</a>
+<div class="slide-counter">Slide 8 / 13</div>
+</div>
+
+<h1 class="slide-title-main">
+Byznys model ROBOOTEC
+</h1>
+
+<img src="slide8.jpg" class="slide-image" alt="Slide 8">
+
+<div class="slide-description">
+
+<p>
+Náš byznys model má tři hlavní fáze monetizace.
+</p>
+
+<p>
+V první fázi probíhá testování tradingu na demo účtech a ověřování funkčnosti systému.
+</p>
+
+<p>
+Ve druhé fázi spouštíme reálné obchodování na finančních trzích a začínáme generovat výnosy z tradingu.
+</p>
+
+<p>
+Ve třetí fázi vzniká plnohodnotný AI asset manager.
+</p>
+
+<p>
+To zahrnuje prodej licencí finančním institucím, vlastní trading platformu pro investory a také vlastní investiční fond.
+</p>
+
+</div>
+
+<div class="slide-buttons">
+
+<a href="slide7.html" class="btn btn-secondary">
+← Předchozí slide
+</a>
+
+<button onclick="playVoice()" class="btn btn-secondary">
+Přehrát hlas
+</button>
+
+<button onclick="stopVoice()" class="btn btn-secondary">
+Vypnout hlas
+</button>
+
+<a href="slide9.html" class="btn btn-primary">
+Další slide →
+</a>
+
+</div>
+
+</div>
+
+<script src="../voice.js"></script>
+
+<script>
+const text = document.querySelector(".slide-description").innerText;
+
+function playVoice(){
+speakText(text);
+}
+</script>
+
+</body>
+</html>
