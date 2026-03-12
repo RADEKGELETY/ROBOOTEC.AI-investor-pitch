@@ -1,64 +1,83 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ROBOOTEC.AI — Slide 2</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROBOOTEC.AI — Slide 2</title>
+<link rel="stylesheet" href="../style.css">
 </head>
+
 <body class="slide-page">
-  <main class="slide-wrap">
-    <div class="slide-topbar">
-      <a class="back-link" href="../index.html">← Zpět na úvod</a>
-      <div>Slide 2 / 13</div>
-    </div>
 
-    <section class="slide-shell">
-      <div class="slide-image-box">
-        <img src="../slides/slide2.jpg" alt="ROBOOTEC.AI Slide 2" class="slide-image" />
-      </div>
+<div class="slide-container">
 
-      <div class="slide-content">
-        <div class="slide-label">Slide 2 — Technologická revoluce</div>
-        <h1 class="slide-title">Technologické revoluce vznikají propojením</h1>
+<div class="slide-header">
+<a href="../index.html" class="back-link">← zpět na úvod</a>
+<div class="slide-counter">Slide 2 / 13</div>
+</div>
 
-        <p class="slide-text" id="slideText">Technologické revoluce často vznikají spojením několika existujících technologií.
+<h1 class="slide-title-main">
+Technologická revoluce vzniká propojením technologií
+</h1>
 
+<img src="slide2.jpg" class="slide-image">
+
+<div class="slide-description">
+
+<p>
+Technologické revoluce často vznikají spojením několika existujících technologií.
+</p>
+
+<p>
 Telefon, hudební přehrávač a internet existovaly dávno před iPhonem. Ale až jejich propojení vytvořilo úplně nový produkt.
+</p>
 
+<p>
 Stejný princip dnes vzniká ve financích.
+</p>
 
+<p>
 Spojením big data, umělé inteligence a algoritmického tradingu vzniká nová generace investičních systémů.
+</p>
 
-A právě tímto směrem jde projekt ROBOOTEC.</p>
+<p>
+A právě tímto směrem jde projekt ROBOOTEC.
+</p>
 
-        <div class="controls">
-          <button class="btn btn-secondary" onclick="playVoice()">Přehrát hlas</button>
-          <button class="btn btn-secondary" onclick="stopVoice()">Vypnout hlas</button>
-          <a class="btn btn-primary" href="slide3.html">Další slide</a>
-        </div>
+</div>
 
-        <div class="audio-note">
-          Tady už investor jasně chápe rámec: nejde o dalšího bota, ale o novou technologickou vrstvu ve financích.
-        </div>
-      </div>
-    </section>
-  </main>
+<div class="slide-buttons">
 
-  <script src="../voice.js"></script>
-  <script>
-    const text = document.getElementById("slideText").innerText;
+<a href="slide1.html" class="btn btn-secondary">
+← Předchozí slide
+</a>
 
-    function playVoice() {
-      speakText(text);
-    }
+<button onclick="playVoice()" class="btn btn-secondary">
+Přehrát hlas
+</button>
 
-    window.onload = function () {
-      setTimeout(() => speakText(text), 500);
-    };
-  </script>
+<button onclick="stopVoice()" class="btn btn-secondary">
+Vypnout hlas
+</button>
+
+<a href="slide3.html" class="btn btn-primary">
+Další slide →
+</a>
+
+</div>
+
+</div>
+
+<script src="../voice.js"></script>
+
+<script>
+const text = document.querySelector(".slide-description").innerText;
+
+function playVoice(){
+speakText(text);
+}
+</script>
+
 </body>
 </html>
