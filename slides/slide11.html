@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROBOOTEC.AI — Slide 11</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="slide-page">
+
+<div class="slide-container">
+
+<div class="slide-header">
+<a href="../index.html" class="back-link">← zpět na úvod</a>
+<div class="slide-counter">Slide 11 / 13</div>
+</div>
+
+<h1 class="slide-title-main">
+Investice a využití kapitálu
+</h1>
+
+<img src="slide11.jpg" class="slide-image" alt="Slide 11">
+
+<div class="slide-description">
+
+<p>
+Pro další fázi projektu hledáme investici ve výši 9 milionů korun.
+</p>
+
+<p>
+Tyto prostředky budou využity především na vývoj trading platformy, technologickou infrastrukturu a provoz systému.
+</p>
+
+<p>
+Část kapitálu bude zároveň využita jako trading kapitál pro ověřování strategií v reálném prostředí finančních trhů.
+</p>
+
+<p>
+Cílem je během následujících 12 měsíců dokončit plně funkční MVP platformy.
+</p>
+
+<p>
+Investor za tuto investici získá přibližně devítiprocentní podíl ve společnosti.
+</p>
+
+</div>
+
+<div class="slide-buttons">
+
+<a href="slide10.html" class="btn btn-secondary">
+← Předchozí slide
+</a>
+
+<button onclick="playVoice()" class="btn btn-secondary">
+Přehrát hlas
+</button>
+
+<button onclick="stopVoice()" class="btn btn-secondary">
+Vypnout hlas
+</button>
+
+<a href="slide12.html" class="btn btn-primary">
+Další slide →
+</a>
+
+</div>
+
+</div>
+
+<script src="../voice.js"></script>
+
+<script>
+const text = document.querySelector(".slide-description").innerText;
+
+function playVoice(){
+speakText(text);
+}
+</script>
+
+</body>
+</html>
