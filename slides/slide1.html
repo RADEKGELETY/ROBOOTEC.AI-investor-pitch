@@ -1,96 +1,81 @@
 <!DOCTYPE html>
 <html lang="cs">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>ROBOOTEC.AI — Slide 1</title>
-
-<link rel="stylesheet" href="../style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROBOOTEC.AI — Slide 1</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
+<body class="premium-slide-page">
 
-<body class="slide-page">
+  <div class="premium-bg premium-bg-1"></div>
+  <div class="premium-bg premium-bg-2"></div>
 
-<div class="slide-container">
+  <main class="premium-slide-wrap">
 
-<div class="slide-header">
+    <div class="premium-topbar">
+      <a href="../index.html" class="premium-back-link">← Zpět na úvod</a>
+      <div class="premium-counter">Slide 1 / 13</div>
+    </div>
 
-<a href="../index.html" class="back-link">
-← zpět na úvod
-</a>
+    <section class="premium-hero-card">
+      <div class="premium-badge">ROBOOTEC.AI · Investor Pitch</div>
 
-<div class="slide-counter">
-Slide 1 / 13
-</div>
+      <h1 class="premium-slide-title">
+        Prediktivní AI Trading Platforma
+      </h1>
 
-</div>
+      <p class="premium-slide-subtitle">
+        AI systém pro autonomní analýzu trhu, predikci vývoje a inteligentní správu investičních strategií.
+      </p>
+    </section>
 
+    <section class="premium-visual-card">
+      <img src="slide1.jpg" class="premium-slide-image" alt="ROBOOTEC.AI Slide 1">
+    </section>
 
-<h1 class="slide-title">
+    <section class="premium-text-card">
+      <div class="premium-text-label">Popis slidu</div>
 
-ROBOOTEC.AI  
-Prediktivní AI Trading Platforma
+      <div class="premium-slide-description" id="slideText">
+        <p>
+          Dobrý den, jmenuji se Radek Gelety a jsem zakladatel projektu ROBOOTEC.AI.
+        </p>
 
-</h1>
+        <p>
+          Budujeme prediktivní AI trading platformu, která využívá velká data a umělou inteligenci k automatickému řízení investic na finančních trzích.
+        </p>
 
+        <p>
+          Naším cílem je vytvořit autonomní systém, který dokáže analyzovat obrovské množství dat, předpovídat vývoj trhu a samostatně řídit investiční strategie s vyšší efektivitou než člověk.
+        </p>
+      </div>
 
-<img src="slide1.jpg" class="slide-image">
+      <div class="premium-buttons">
+        <button onclick="playVoice()" class="btn btn-secondary">
+          Přehrát hlas
+        </button>
 
+        <button onclick="stopVoice()" class="btn btn-secondary">
+          Vypnout hlas
+        </button>
 
+        <a href="slide2.html" class="btn btn-primary">
+          Další slide →
+        </a>
+      </div>
+    </section>
 
-<div class="slide-description">
+  </main>
 
-<p>
-Dobrý den, jmenuji se Radek Gelety a jsem zakladatel projektu ROBOOTEC.AI.
-</p>
+  <script src="../voice.js"></script>
+  <script>
+    const text = document.querySelector(".premium-slide-description").innerText;
 
-<p>
-Budujeme prediktivní AI trading platformu, která využívá velká data a umělou inteligenci k automatickému řízení investic na finančních trzích.
-</p>
-
-<p>
-Naším cílem je vytvořit autonomní systém, který dokáže analyzovat obrovské množství dat, předpovídat vývoj trhu a samostatně řídit investiční strategie s vyšší efektivitou než člověk.
-</p>
-
-</div>
-
-
-
-<div class="slide-buttons">
-
-<button onclick="playVoice()" class="btn btn-secondary">
-Přehrát hlas
-</button>
-
-<button onclick="stopVoice()" class="btn btn-secondary">
-Vypnout hlas
-</button>
-
-<a href="slide2.html" class="btn btn-primary">
-Další slide →
-</a>
-
-</div>
-
-
-</div>
-
-
-
-<script src="../voice.js"></script>
-
-<script>
-
-const text = document.querySelector(".slide-description").innerText;
-
-function playVoice(){
-speakText(text);
-}
-
-</script>
-
+    function playVoice() {
+      speakText(text);
+    }
+  </script>
 
 </body>
 </html>
