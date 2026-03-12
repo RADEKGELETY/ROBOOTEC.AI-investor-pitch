@@ -1,118 +1,27 @@
 <!DOCTYPE html>
 <html lang="cs">
-
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>ROBOOTEC.AI – Investor Pitch</title>
-
+<title>ROBOOTEC.AI Investor Pitch</title>
 <link rel="stylesheet" href="style.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
 
-<div id="landing" class="center">
+<div class="pitch-container">
 
-<h1>ROBOOTEC.AI</h1>
+<img id="slide-image" src="slides/slide1.jpg">
 
-<p class="subtitle">
-Predictive AI Trading Platform
-</p>
-
-<div class="robin">
-
-<p>
-
-Dobrý den.<br><br>
-
-Jmenuji se <b>Robin</b>.<br>
-Jsem AI asistent projektu ROBOOTEC.<br><br>
-
-Provedu vás krátkým investičním briefingem.
-
-</p>
-
+<div class="slide-text" id="slide-text">
+Dobrý den, jmenuji se Radek Gelety a jsem zakladatel projektu ROBOOTEC.AI.
+Budujeme prediktivní AI trading platformu, která využívá velká data a umělou inteligenci k automatizovanému řízení investic.
 </div>
 
-<button onclick="startPitch()">
-▶ Spustit prezentaci
-</button>
+<button onclick="startPitch()">▶ Spustit prezentaci</button>
 
 </div>
-
-
-
-<div id="pitch" style="display:none;">
-
-<div class="topbar">
-
-<span id="progress"></span>
-
-</div>
-
-
-<div class="slide-container">
-
-<img id="slideImage">
-
-</div>
-
-
-<div class="controls">
-
-<button onclick="prevSlide()">
-← Předchozí
-</button>
-
-<button onclick="nextSlide()">
-Další →
-</button>
-
-</div>
-
-</div>
-
-
-
-<div id="invest" style="display:none;" class="center">
-
-<h2>Děkujeme za váš čas</h2>
-
-<p>
-
-Projekt ROBOOTEC.AI aktuálně hledá strategického investora
-pro urychlení vývoje AI trading platformy.
-
-</p>
-
-<form action="https://formsubmit.co/radek@robootec.ai" method="POST">
-
-<input type="text" name="name" placeholder="Jméno" required>
-
-<input type="text" name="company" placeholder="Společnost">
-
-<input type="email" name="email" placeholder="Email" required>
-
-<textarea name="message" placeholder="Zpráva"></textarea>
-
-<button type="submit">
-
-Mám zájem o investici
-
-</button>
-
-</form>
-
-</div>
-
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
