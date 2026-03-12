@@ -787,3 +787,49 @@ opacity:0.95;
     line-height:1.8;
   }
 }
+.landing-page::before,
+.landing-page::after{
+  content:"";
+  position:fixed;
+  border-radius:999px;
+  filter:blur(90px);
+  pointer-events:none;
+  z-index:0;
+  opacity:0.32;
+  animation:landingFloat 12s ease-in-out infinite;
+}
+
+.landing-page::before{
+  width:240px;
+  height:240px;
+  background:rgba(79,124,255,0.28);
+  top:8%;
+  left:-40px;
+}
+
+.landing-page::after{
+  width:260px;
+  height:260px;
+  background:rgba(0,229,255,0.18);
+  right:-60px;
+  top:22%;
+  animation-delay:2s;
+}
+
+@keyframes landingFloat{
+  0%{
+    transform:translateY(0px) translateX(0px);
+  }
+  50%{
+    transform:translateY(18px) translateX(10px);
+  }
+  100%{
+    transform:translateY(0px) translateX(0px);
+  }
+}
+
+.landing-wrapper,
+.landing-card{
+  position:relative;
+  z-index:1;
+}
