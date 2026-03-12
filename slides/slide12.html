@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROBOOTEC.AI — Slide 12</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="slide-page">
+
+<div class="slide-container">
+
+<div class="slide-header">
+<a href="../index.html" class="back-link">← zpět na úvod</a>
+<div class="slide-counter">Slide 12 / 13</div>
+</div>
+
+<h1 class="slide-title-main">
+Tým projektu ROBOOTEC
+</h1>
+
+<img src="slide12.jpg" class="slide-image" alt="Slide 12">
+
+<div class="slide-description">
+
+<p>
+Projekt ROBOOTEC staví multidisciplinární tým.
+</p>
+
+<p>
+Radek Gelety vede strategii a rozvoj projektu.
+</p>
+
+<p>
+David Fogl je CTO projektu a stojí za technologickou architekturou AI systému.
+</p>
+
+<p>
+Michaela Jankulárová koordinuje projekt a provoz.
+</p>
+
+<p>
+Markéta Schröcková má na starosti finance a reporting.
+</p>
+
+<p>
+Jan Sedláček řeší právní rámec projektu a regulatorní otázky.
+</p>
+
+<p>
+A náš AI strategický modul Robin se zaměřuje na analýzu trhu a obchodní strategie.
+</p>
+
+</div>
+
+<div class="slide-buttons">
+
+<a href="slide11.html" class="btn btn-secondary">
+← Předchozí slide
+</a>
+
+<button onclick="playVoice()" class="btn btn-secondary">
+Přehrát hlas
+</button>
+
+<button onclick="stopVoice()" class="btn btn-secondary">
+Vypnout hlas
+</button>
+
+<a href="slide13.html" class="btn btn-primary">
+Další slide →
+</a>
+
+</div>
+
+</div>
+
+<script src="../voice.js"></script>
+
+<script>
+const text = document.querySelector(".slide-description").innerText;
+
+function playVoice(){
+speakText(text);
+}
+</script>
+
+</body>
+</html>
