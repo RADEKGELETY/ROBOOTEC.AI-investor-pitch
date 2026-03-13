@@ -24,6 +24,7 @@
   <img src="slide1.jpg" class="slide-image" alt="Slide 1">
 
   <div class="slide-description">
+
     <p>
       Dobrý den, jmenuji se Radek Gelety a jsem zakladatel projektu ROBOOTEC.AI.
     </p>
@@ -35,22 +36,31 @@
     <p>
       Naším cílem je vytvořit autonomní systém, který dokáže analyzovat obrovské množství dat, předpovídat vývoj trhu a samostatně řídit investiční strategie s vyšší efektivitou než člověk.
     </p>
+
   </div>
 
   <div class="slide-buttons">
+    <a href="slide2.html" class="btn btn-primary">Další slide →</a>
     <button onclick="playVoice()" class="btn btn-secondary">Přehrát hlas</button>
     <button onclick="stopVoice()" class="btn btn-secondary">Vypnout hlas</button>
-    <a href="slide2.html" class="btn btn-primary">Další slide →</a>
   </div>
+
+  <audio id="slideAudio">
+    <source src="slide1.mp3" type="audio/mpeg">
+  </audio>
 
 </div>
 
-<script src="../voice.js"></script>
 <script>
-const text = document.querySelector(".slide-description").innerText;
-
 function playVoice(){
-  speakText(text);
+  const audio = document.getElementById("slideAudio");
+  audio.play();
+}
+
+function stopVoice(){
+  const audio = document.getElementById("slideAudio");
+  audio.pause();
+  audio.currentTime = 0;
 }
 </script>
 
