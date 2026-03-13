@@ -12,74 +12,77 @@
 
 <div class="slide-container">
 
-<div class="slide-header">
-<a href="../index.html" class="back-link">← zpět na úvod</a>
-<div class="slide-counter">Slide 3 / 13</div>
+  <div class="slide-header">
+    <a href="../index.html" class="back-link">← zpět na úvod</a>
+    <div class="slide-counter">Slide 3 / 13</div>
+  </div>
+
+  <h1 class="slide-title-main">
+    Problém současného investování
+  </h1>
+
+  <img src="slide3.jpg" class="slide-image" alt="Slide 3">
+
+  <div class="slide-description">
+
+    <p>
+      Finanční trhy jsou dnes extrémně komplexní prostředí.
+    </p>
+
+    <p>
+      Každý den vznikají tisíce nových dat – ekonomické indikátory, geopolitické události, makroekonomické změny i informace ze sociálních sítí.
+    </p>
+
+    <p>
+      Pro jednotlivce je téměř nemožné tato data v reálném čase analyzovat a správně interpretovat.
+    </p>
+
+    <p>
+      Navíc lidské rozhodování ovlivňují emoce, stres a psychologické zkreslení.
+    </p>
+
+    <p>
+      Výsledkem je, že většina investorů dlouhodobě nedosahuje stabilních výsledků.
+    </p>
+
+  </div>
+
+  <div class="slide-buttons">
+
+    <a href="slide4.html" class="btn btn-primary">
+      Další slide →
+    </a>
+
+    <button onclick="playVoice()" class="btn btn-secondary">
+      Přehrát hlas
+    </button>
+
+    <button onclick="stopVoice()" class="btn btn-secondary">
+      Vypnout hlas
+    </button>
+
+    <a href="slide2.html" class="btn btn-secondary">
+      ← Předchozí slide
+    </a>
+
+  </div>
+
+  <audio id="slideAudio">
+    <source src="slide3.mp3" type="audio/mpeg">
+  </audio>
+
 </div>
-
-<h1 class="slide-title-main">
-Problém na trhu: chaos v datech, emoce a slepota ke kontextu
-</h1>
-
-<img src="slide3.jpg" class="slide-image" alt="Slide 3">
-
-<div class="slide-description">
-
-<p>
-Finanční trhy dnes generují obrovské množství dat.
-</p>
-
-<p>
-Makroekonomické zprávy, geopolitika, sociální sítě, fundamentální data i technická data.
-</p>
-
-<p>
-Pro člověka je prakticky nemožné všechna tato data rychle zpracovat a správně interpretovat.
-</p>
-
-<p>
-Navíc zde působí lidský faktor — stres, emoce a kognitivní zkreslení.
-</p>
-
-<p>
-Současné obchodní systémy jsou často technologicky zastaralé a nedokážou pracovat s kontextem.
-</p>
-
-<p>
-Výsledkem je nízké zhodnocení kapitálu a časté investiční chyby.
-</p>
-
-</div>
-
-<div class="slide-buttons">
-
-<a href="slide2.html" class="btn btn-secondary">
-← Předchozí slide
-</a>
-
-<button onclick="playVoice()" class="btn btn-secondary">
-Přehrát hlas
-</button>
-
-<button onclick="stopVoice()" class="btn btn-secondary">
-Vypnout hlas
-</button>
-
-<a href="slide4.html" class="btn btn-primary">
-Další slide →
-</a>
-
-</div>
-
-</div>
-
-<script src="../voice.js"></script>
 
 <script>
-const text = document.querySelector(".slide-description").innerText;
-
 function playVoice(){
-speakText(text);
+  const audio = document.getElementById("slideAudio");
+  audio.play();
+}
+
+function stopVoice(){
+  const audio = document.getElementById("slideAudio");
+  audio.pause();
+  audio.currentTime = 0;
 }
 </script>
 
